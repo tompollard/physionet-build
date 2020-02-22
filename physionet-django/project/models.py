@@ -451,8 +451,8 @@ class SectionContent(models.Model):
         related_name='%(class)ss', on_delete=models.PROTECT,
         null=True)
 
-    custom_title = models.CharField(max_length=30)
-    custom_order = models.PositiveSmallIntegerField()
+    custom_title = models.CharField(max_length=30, null=True)
+    custom_order = models.PositiveSmallIntegerField(null=True)
     section_content = SafeHTMLField(blank=True)
 
     class Meta:
