@@ -62,7 +62,7 @@ jobs:
           ldconfig
       - name: install and setup lightwave
         run: |
-          wget https://github.com/tompollard/lightwave/archive/bfe908a7f53434df61fd2444bf8c235e3e6226fc.tar.gz -O lightwave.tar.gz
+          wget https://github.com/tompollard/lightwave/archive/dd9f2c5fb4a81012781b75b35d6f39714ddd1eec.tar.gz -O lightwave.tar.gz
           tar -xf lightwave.tar.gz
           (cd lightwave-* && make CGIDIR=/usr/local/bin sandboxed-server-ci)
           wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
